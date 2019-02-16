@@ -2,7 +2,9 @@
   <div class="col-md-3 mb-3" *ngFor="let policy of policies">
     <div class="card">
       <div class="card-header">
+        <a routerLink="/policy/{{ policy.id }}">
         {{ policy.title }}
+        </a>
       </div>
       <div class="card-body">
         {{ policy.description }}

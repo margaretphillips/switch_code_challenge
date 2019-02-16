@@ -3,7 +3,9 @@
   <div class="col-md-3 mb-3" *ngFor="let benefit of benefits">
     <div class="card">
       <div class="card-header">
-        {{ benefit.title }}
+          <a routerLink="/benefit/{{ benefit.id }}">
+          {{ benefit.title }}
+          </a>
       </div>
       <div class="card-body">
         {{ benefit.description }}

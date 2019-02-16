@@ -2,7 +2,9 @@
   <div class="col-md-3 mb-3" *ngFor="let safety of safeties">
     <div class="card">
       <div class="card-header">
-        {{ safety.title }}
+        <a routerLink="/safety/{{ safety.id }}">
+                {{ safety.title }}
+        </a>
       </div>
       <div class="card-body">
         {{ safety.description }}
