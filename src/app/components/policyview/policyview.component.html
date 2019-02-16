@@ -1,3 +1,24 @@
-<p>
-  policyview works!
-</p>
+<div class="row">
+  <div class="col p-4">
+    <a routerLink="/policy">
+      <h5>Back</h5>
+    </a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    <div class="row">
+      <div class="col">
+        <h4>
+          <a routerLink="">
+              {{ policy_title }}
+          </a>
+        </h4>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+        {{ policy_description }}
+  </div>
+</div>
+
