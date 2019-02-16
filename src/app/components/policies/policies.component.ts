@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import PoliciesData from '../../data/policies.json';
 
 @Component({
   selector: 'app-policies',
@@ -7,37 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PoliciesComponent implements OnInit {
 
-  policies = [{
-    id: '1',
-    name: 'Policy',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
-
-  },
-  {
-    id: '2',
-    name: 'Policy',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
-
-  },
-  {
-    id: '3',
-    name: 'Policy',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
-
-  },
-  {
-    id: '4',
-    name: 'Policy',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
-
-  },
-  {
-    id: '5',
-    name: 'Policy',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
-
-  }
-  ]
+  policies = PoliciesData;
 
   constructor() { }
 
