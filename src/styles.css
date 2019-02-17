@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,body{
+    font-size:12pt;
+}
+
+.card{
+    font-family: 'Roboto',sans-serif;
+    min-height:300px;
+}
+
+
+.card-header{
+    background-color:#d71922;
+    color:#ffffff;
+    font-size: .9em;
+}
+
+.card-body{
+    font-size:.8em;
+}
+.card-header a:link,
+.card-header a:visited,
+.card-header a:hover,
+.card-header a:active {
+    color:#ffffff;
+    text-decoration: none;
+}

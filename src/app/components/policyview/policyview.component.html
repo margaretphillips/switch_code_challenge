@@ -1,16 +1,10 @@
-<div class="row">
-  <div class="col p-4">
-    <a routerLink="/policy">
-      <h5>Back</h5>
-    </a>
-  </div>
-</div>
+
 <div class="card">
   <div class="card-header">
     <div class="row">
       <div class="col">
         <h4>
-          <a routerLink="">
+          <a routerLink="/policy">
               {{ policy_title }}
           </a>
         </h4>
@@ -22,3 +16,17 @@
   </div>
 </div>
 
+<div class="row mt-3">
+  <div class="col-md-6 mb-3" *ngFor="let policy of policies">
+    <div class="card">
+      <div class="card-header">
+        <a routerLink="/policy/{{ policy.id }}">
+          {{ policy.title }}
+        </a>
+      </div>
+      <div class="card-body">
+        {{ policy.description }}
+      </div>
+    </div>
+  </div>
+</div>

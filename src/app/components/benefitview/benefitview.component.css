@@ -1,0 +1,13 @@
+.card {
+  font-family: 'Roboto', sans-serif;
+  min-height: 200px;
+}
+.card-header {
+  background-color: #d71922;
+  color: #ffffff;
+  font-size: 1.2em;
+}
+
+.card-body {
+  font-size: 1em;
+}

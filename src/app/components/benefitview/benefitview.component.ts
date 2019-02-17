@@ -9,6 +9,8 @@ import BenefitsData from '../../data/benefits.json';
   styleUrls: ['./benefitview.component.css']
 })
 export class BenefitviewComponent implements OnInit {
+  benefits = BenefitsData;
+
   benefit_id: number;
   benefit_title: string;
   benefit_description: string;

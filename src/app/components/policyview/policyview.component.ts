@@ -8,6 +8,8 @@ import PoliciesData from '../../data/policies.json';
   styleUrls: ['./policyview.component.css']
 })
 export class PolicyviewComponent implements OnInit {
+  policies = PoliciesData;
+  
   policy_id: number;
   policy_title: string;
   policy_description: string;

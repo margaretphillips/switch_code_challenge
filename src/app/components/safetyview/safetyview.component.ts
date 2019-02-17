@@ -8,6 +8,8 @@ import SafetiesData from '../../data/safeties.json';
   styleUrls: ['./safetyview.component.css']
 })
 export class SafetyviewComponent implements OnInit {
+  safeties = SafetiesData;
+  
   safety_id: number;
   safety_title: string;
   safety_description: string;
