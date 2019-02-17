@@ -5,7 +5,6 @@
 .card-header {
   background-color: #d71922;
   color: #ffffff;
-  font-size: 1.2em;
   transition-property: background-color,
   color;
   transition-duration: 0.5s,
@@ -18,7 +17,3 @@
     background-color: black;
     color: #d71922;
   }
-
-.card-body {
-  font-size: 1em;
-}

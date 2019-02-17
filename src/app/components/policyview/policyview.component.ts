@@ -18,6 +18,7 @@ export class PolicyviewComponent implements OnInit {
 
   ngOnInit() {
 
+  /*grab the top item from the id*/
     this.route.params.subscribe(params => {
       this.policy_id = +this.route.snapshot.params['id'];
 
