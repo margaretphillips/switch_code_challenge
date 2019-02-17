@@ -2,27 +2,43 @@
 
 html,body{
     font-size:12pt;
+    background-color: #ededed;
 }
 
 .card{
     font-family: 'Roboto',sans-serif;
-    min-height:300px;
+    height:300px;
 }
-
 
 .card-header{
     background-color:#d71922;
     color:#ffffff;
     font-size: .9em;
+    transition-property: background-color,color;
+    transition-duration: 0.5s, 1s;
+    transition-timing-function: ease,linear;
+}
+
+.card-header:hover {
+  background-color: black;
+  color:#d71922;
+  font-size: .9em;
 }
 
 .card-body{
     font-size:.8em;
 }
-.card-header a:link,
-.card-header a:visited,
-.card-header a:hover,
-.card-header a:active {
-    color:#ffffff;
-    text-decoration: none;
+
+.card-header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.card-header a:hover {
+    color:#d71922;
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    .card {
+      min-height: auto!important;
+    }
 }

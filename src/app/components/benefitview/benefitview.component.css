@@ -1,13 +1,19 @@
 .card {
   font-family: 'Roboto', sans-serif;
-  min-height: 200px;
+  height: auto;
 }
 .card-header {
   background-color: #d71922;
   color: #ffffff;
   font-size: 1.2em;
+  transition-property: background-color,color;
+  transition-duration: 0.5s,1s;
+  transition-timing-function: ease,linear;
 }
-
+.card-header:hover {
+  background-color: black;
+  color: #d71922;
+}
 .card-body {
   font-size: 1em;
 }

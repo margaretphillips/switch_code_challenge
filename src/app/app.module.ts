@@ -37,7 +37,10 @@ const appRoutes: Routes = [
     BrowserModule,
      RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true }
+       { enableTracing: true,
+        scrollPositionRestoration: 'enabled',
+         anchorScrolling: 'enabled',
+         scrollOffset: [0, 0]  }
     )
   ],
   bootstrap: [AppComponent]
